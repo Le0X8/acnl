@@ -1,0 +1,25 @@
+{
+  "name": "acnl",
+  "version": "0.0.1",
+  "description": "Animal Crossing New Leaf toolkit for Node.JS and Web",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le0X8/acnl.git"
+  },
+  "keywords": [
+    "AnimalCrossing",
+    "NewLeaf",
+    "AnimalCrossingNewLeaf",
+    "ACNL"
+  ],
+  "author": "LeoX DEV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Le0X8/acnl/issues"
+  },
+  "homepage": "https://github.com/Le0X8/acnl#readme"
+}
