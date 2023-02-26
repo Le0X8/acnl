@@ -4,6 +4,8 @@ module.exports = {
         GardenPlus: require('./editor/savegame/garden-plus')
     },
     dataType: {
-        Item: require('./datatype/item')
+        Item: require('./datatype/item'),
+        Pattern: require('./datatype/pattern'),
+        playtime: require('./datatype/playtime')
     }
 };

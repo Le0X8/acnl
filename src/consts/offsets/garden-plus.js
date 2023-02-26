@@ -1,4 +1,15 @@
 module.exports = {
+    // Added by @Le0X8
+    SVH_SECURE_VALUE: 0x000000,
+    SVH_SAVE_INITALISED: 0x000008,
+
+    ASH_HEADER_CHECKSUM: 0x000080,
+    ASH_SAVE_VERIFIER_1: 0x000084,
+    ASH_SAVE_VERIFIER_2: 0x000086,
+
+    PLAYER_UNDERTOPWEAR: 0x16,
+
+    // Original from @marcrobledo's acnl-editor
     TOWN_TREESIZE: 0x04be86,
     TOWN_GRASSTYPE: 0x053481,
     TOWN_PLAYTIME: 0x0621b0,
@@ -36,8 +47,8 @@ module.exports = {
     PLAYER_TAN: 0x08,
     PLAYER_HAT: 0x0a,
     PLAYER_ACCESSORY: 0x0e,
-    PLAYER_WETSUIT: 0x12,
-    PLAYER_TOPWEAR: 0x16,
+    PLAYER_WETSUIT: 0x16, // was 0x12
+    PLAYER_TOPWEAR: 0x12, // was 0x16
     PLAYER_BOTTOMWEAR: 0x1a,
     PLAYER_SOCKS: 0x1e,
     PLAYER_SHOES: 0x22,
