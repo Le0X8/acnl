@@ -2,6 +2,7 @@ const OFFSETS = require('../../consts/offsets/garden-plus');
 const playtime = require('../../datatype/playtime');
 const Item = require('../../datatype/item');
 const Pattern = require('../../datatype/pattern');
+const updateChecksums = require('../../datatype/checksum');
 class GardenPlus {
     _binaries;
     _cfg = {};
@@ -53,6 +54,7 @@ class GardenPlus {
     }
 
     toBinary () { // TODO
+        updateChecksums(this._binaries);
         return this._binaries;
     }
 

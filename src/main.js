@@ -6,6 +6,7 @@ module.exports = {
     dataType: {
         Item: require('./datatype/item'),
         Pattern: require('./datatype/pattern'),
-        playtime: require('./datatype/playtime')
+        playtime: require('./datatype/playtime'),
+        checksum: require('./datatype/checksum')
     }
 };
