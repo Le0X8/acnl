@@ -2,6 +2,6 @@
 
 const acnl = require('../src/main');
 const fs = require('fs');
-var savegame = fs.readFileSync('./garden_plus_corrupted.dat');
+var savegame = fs.readFileSync('./garden_plus.dat');
 acnl.dataType.checksum(savegame);
-fs.writeFileSync('./garden_plus_fixed.dat', savegame);
+fs.writeFileSync('./garden_plus.dat', savegame);

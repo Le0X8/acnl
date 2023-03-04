@@ -7,6 +7,7 @@ module.exports = {
         Item: require('./datatype/item'),
         Pattern: require('./datatype/pattern'),
         playtime: require('./datatype/playtime'),
-        checksum: require('./datatype/checksum')
+        checksum: require('./datatype/checksum'),
+        encrypted: require('./datatype/encrypted'),
     }
 };
