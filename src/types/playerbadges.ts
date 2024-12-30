@@ -1,3 +1,4 @@
+import { Buffer } from 'buffer/';
 import { parseEncryptedValue } from './encryptedvalue';
 
 export function parsePlayerBadges(buffer: Buffer) {

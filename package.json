@@ -1,9 +1,9 @@
 {
   "name": "acnl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Animal Crossing: New Leaf savegame toolkit",
-  "main": "dist/lib.js",
-  "types": "dist/lib.d.ts",
+  "main": "dist/lib.mjs",
+  "types": "dist/lib.d.mts",
   "module": "dist/lib.mjs",
   "files": [
     "dist"
@@ -28,5 +28,8 @@
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3"
   }
 }

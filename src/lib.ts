@@ -10,13 +10,13 @@ export function parseGardenPlusDat(data: Buffer) {
     players: [
       parsePlayer(data.subarray(0xa0, 0xa480)),
       parsePlayer(data.subarray(0xa0 + 0xa480, 0xa480 + 0xa480)),
-      parsePlayer(
-        data.subarray(0xa0 + 0xa480 * 2, 0xa480 + 0xa480 * 2)
-      ),
-      parsePlayer(
-        data.subarray(0xa0 + 0xa480 * 3, 0xa480 + 0xa480 * 3)
-      ),
+      parsePlayer(data.subarray(0xa0 + 0xa480 * 2, 0xa480 + 0xa480 * 2)),
+      parsePlayer(data.subarray(0xa0 + 0xa480 * 3, 0xa480 + 0xa480 * 3)),
     ],
     villagerData: parseVillagerData(data.subarray(0x292a0, 0x89aff)),
   };
 }
+
+export default {
+  parseGardenPlusDat,
+};

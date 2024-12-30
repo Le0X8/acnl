@@ -1,6 +1,8 @@
+import { Buffer } from 'buffer/';
+
 export function parseEncryptedValue(buffer: Buffer) {
-  const int1 = buffer.readUint32LE(0);
-  const int2 = buffer.readUint32LE(4);
+  const int1 = buffer.readUInt32LE(0);
+  const int2 = buffer.readUInt32LE(4);
 
   const enc = int1;
   const adjust = int2 & 0xffff;
