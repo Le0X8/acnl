@@ -1,2 +1,3 @@
-# acnl-json
-ACNL savegame to JSON converter
+# acnl
+
+Animal Crossing: New Leaf savegame toolkit

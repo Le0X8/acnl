@@ -1,0 +1,32 @@
+{
+  "name": "acnl",
+  "version": "0.1.0",
+  "description": "Animal Crossing: New Leaf savegame toolkit",
+  "main": "dist/lib.js",
+  "types": "dist/lib.d.ts",
+  "module": "dist/lib.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "acnl": "tsx src/main.ts",
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Le0X8/acnl.git"
+  },
+  "keywords": [],
+  "author": "Leonard Lesinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Le0X8/acnl/issues"
+  },
+  "homepage": "https://github.com/Le0X8/acnl#readme",
+  "devDependencies": {
+    "terser": "^5.37.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
