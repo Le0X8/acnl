@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Le0X8/acnl#readme",
   "devDependencies": {
+    "@types/node": "^25.0.9",
     "terser": "^5.37.0",
     "tsup": "^8.3.5",
     "tsx": "^4.19.2",

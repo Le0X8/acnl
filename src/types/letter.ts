@@ -26,4 +26,4 @@ export function parseLetter(buffer: Buffer) {
     present: parseItem(buffer.subarray(0x00274, 0x00278) as Buffer),
     unknown0x00278: Array.from(buffer.subarray(0x00278, 0x00280)),
   };
-};
+}

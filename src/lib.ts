@@ -31,26 +31,26 @@ export function parseGardenPlusDat(data: Buffer) {
       parsePlayer(data.subarray(0xa0, 0xa480) as Buffer),
       parsePlayer(data.subarray(0xa0 + 0xa480, 0xa480 + 0xa480) as Buffer),
       parsePlayer(
-        data.subarray(0xa0 + 0xa480 * 2, 0xa480 + 0xa480 * 2) as Buffer
+        data.subarray(0xa0 + 0xa480 * 2, 0xa480 + 0xa480 * 2) as Buffer,
       ),
       parsePlayer(
-        data.subarray(0xa0 + 0xa480 * 3, 0xa480 + 0xa480 * 3) as Buffer
+        data.subarray(0xa0 + 0xa480 * 3, 0xa480 + 0xa480 * 3) as Buffer,
       ),
     ],
     villagerData: parseVillagerData(
-      data.subarray(0x292a0, 0x292a0 + 0x22be0) as Buffer
+      data.subarray(0x292a0, 0x292a0 + 0x22be0) as Buffer,
     ),
     buildingData: parseBuildingData(
-      data.subarray(0x4be80, 0x4be80 + 0x44bc) as Buffer
+      data.subarray(0x4be80, 0x4be80 + 0x44bc) as Buffer,
     ),
     minigameData: parseMinigameData(
-      data.subarray(0x5033c, 0x5033c + 0x28f4) as Buffer
+      data.subarray(0x5033c, 0x5033c + 0x28f4) as Buffer,
     ),
     unknownData: parseUnknownData(
-      data.subarray(0x52c30, 0x52c30 + 0x7f4) as Buffer
+      data.subarray(0x52c30, 0x52c30 + 0x7f4) as Buffer,
     ),
     townData: parseTownData(
-      data.subarray(0x53424, 0x53424 + 0x366dc) as Buffer
+      data.subarray(0x53424, 0x53424 + 0x366dc) as Buffer,
     ),
   };
 }

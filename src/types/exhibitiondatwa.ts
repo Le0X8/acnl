@@ -11,6 +11,10 @@ import { parsePlayerListEntry } from './playerlistentry';
 export function parseExhibitionDatWa(data: Buffer) {
   return {
     crc32: data.readUInt32LE(0x000000),
-    players: Array.from({ length: 48 }, (_, i) => parsePlayerListEntry(data.subarray(4 + i * 0x30, 4 + (i + 1) * 0x30) as Buffer)),
+    players: Array.from({ length: 48 }, (_, i) =>
+      parsePlayerListEntry(
+        data.subarray(4 + i * 0x30, 4 + (i + 1) * 0x30) as Buffer,
+      ),
+    ),
   };
 }
